@@ -232,7 +232,7 @@ export default function ChapterPage({ chapter }) {
 
   return (
     <main className="px-4 py-10 sm:px-6 lg:px-8">
-      <div className="mx-auto flex max-w-7xl gap-10">
+      <div className="mx-auto max-w-7xl lg:flex lg:gap-10">
         <ChapterSidebar />
 
         <article className="min-w-0 flex-1">

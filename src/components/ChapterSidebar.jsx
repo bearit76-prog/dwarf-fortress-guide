@@ -35,14 +35,16 @@ export default function ChapterSidebar() {
 
   return (
     <>
-      <button
-        type="button"
-        className="mb-5 inline-flex min-h-11 items-center gap-2 rounded-md border border-steel/25 bg-panel px-4 py-2 text-sm font-semibold text-text lg:hidden"
-        onClick={() => setOpen(true)}
-      >
-        <Menu aria-hidden="true" className="h-4 w-4" />
-        Chapters
-      </button>
+      <div className="mb-5 flex justify-start lg:hidden">
+        <button
+          type="button"
+          className="inline-flex min-h-11 w-fit shrink-0 self-start items-center gap-2 rounded-md border border-steel/25 bg-panel px-4 py-2 text-sm font-semibold text-text"
+          onClick={() => setOpen(true)}
+        >
+          <Menu aria-hidden="true" className="h-4 w-4" />
+          Chapters
+        </button>
+      </div>
 
       <aside className="hidden lg:block lg:w-72 lg:shrink-0">
         <div className="sticky top-24 rounded-lg border border-steel/20 bg-panel/60 p-4">
