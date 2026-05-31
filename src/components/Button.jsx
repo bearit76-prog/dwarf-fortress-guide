@@ -14,6 +14,7 @@ const variants = {
 
 export default function Button({ children, to, href, variant = 'primary', icon: Icon }) {
   const className = `${base} ${variants[variant]}`;
+  const isExternal = href?.startsWith('http');
   const content = (
     <>
       {Icon ? <Icon aria-hidden="true" className="h-4 w-4" /> : null}
@@ -23,7 +24,7 @@ export default function Button({ children, to, href, variant = 'primary', icon: 
 
   if (href) {
     return (
-      <a className={className} href={href}>
+      <a className={className} href={href} rel={isExternal ? 'noreferrer' : undefined} target={isExternal ? '_blank' : undefined}>
         {content}
       </a>
     );

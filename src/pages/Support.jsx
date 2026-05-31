@@ -16,10 +16,11 @@ export default function Support() {
           dignity intact, a small coffee is appreciated.
         </p>
         <div className="mt-9 flex justify-center">
-          <Button href="#" icon={Coffee}>Buy Me a Coffee</Button>
+          <Button href="https://www.buymeacoffee.com/dfguide" icon={Coffee}>Buy Me a Coffee</Button>
         </div>
         <p className="mx-auto mt-6 max-w-xl text-sm leading-6 text-steel">
-          Placeholder button for a future support link. The guide remains free either way.
+          Support is optional, and the guide stays free either way. Stripe approval may still be pending on Buy Me a
+          Coffee while the page finishes going live.
         </p>
       </section>
     </main>

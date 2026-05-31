@@ -107,7 +107,7 @@ export default function Home() {
             web development.
           </p>
           <div className="mt-8 flex justify-center">
-            <Button to="/support" variant="secondary" icon={Coffee}>Buy Me a Coffee</Button>
+            <Button href="https://www.buymeacoffee.com/dfguide" variant="secondary" icon={Coffee}>Buy Me a Coffee</Button>
           </div>
         </div>
       </section>
