@@ -408,7 +408,7 @@ export const chapterContent = {
               ['Dwarf 3', 'Woodsman', 'Wood Cutter L5, Carpenter L5', 'Supplies timber and crafts beds, bins, and barrels.'],
               ['Dwarf 4', 'Farmer', 'Grower L5, Herbalist L5', 'Starts farms and gathers wild plants immediately.'],
               ['Dwarf 5', 'Brewer/Cook', 'Brewer L5, Cook L5', 'Turns crops into meals and alcohol.'],
-              ['Dwarf 6', 'Engineer', 'Mechanic L5, Architect L5', 'Builds traps, mechanisms, pumps, and bridges.'],
+              ['Dwarf 6', 'Engineer', 'Mechanic L5, Pump Operator L5', 'Builds traps, mechanisms, pumps, and bridges.'],
               ['Dwarf 7', 'Leader', 'Appraiser L2, Organizer L3, Negotiator L3, Record Keeper L2', 'Serves as Broker, Manager, and Bookkeeper.'],
             ],
           },
@@ -767,7 +767,7 @@ export const chapterContent = {
             rows: [
               ['Metals', 'Iron, steel, pig iron, platinum, nickel', 'Bronze, copper, silver, gold, lead, tin'],
               ['Glass', 'Green glass, clear glass, crystal glass', 'None; all glass is magma-safe'],
-              ['Stone', 'Basalt, gabbro, obsidian, quartzite, rhyolite', 'Granite, marble, limestone, chert, shale'],
+              ['Stone', 'Basalt, gabbro, obsidian, quartzite, rhyolite, chert', 'Granite, marble, limestone, shale'],
               ['Wood', 'Nether-cap only', 'Oak, pine, birch, fungiwood, alder, and most woods'],
             ],
           },
@@ -776,7 +776,7 @@ export const chapterContent = {
           {
             type: 'warning',
             label: 'WARNING',
-            body: 'Raw iron ore is not magma-safe, but refined iron bars and steel bars are. For stone, basalt and gabbro are common safe choices. A single unsafe component can melt and deconstruct the machine.',
+            body: 'Do not assume every ore or stone is magma-safe. Hematite and magnetite are safe iron ores, but limonite is not. When unsure, use iron, steel, glass, or a known magma-safe stone. A single unsafe component can melt and deconstruct the machine.',
           },
         ],
         subsections: [
@@ -839,13 +839,13 @@ export const chapterContent = {
             ],
           },
           {
-            title: 'Hatch Stair Shield for Heavy Aquifers',
+            title: 'Advanced Heavy Aquifer Hatch Shield',
             steps: [
-              'Dig to the tile immediately above the heavy aquifer.',
-              'Build a hatch cover over the staircase tile.',
-              'Have the miner dig the tile below while standing on the closed hatch.',
-              'Use the hatch to block upward water pressure.',
-              'Seal the shaft with constructed walls, then repeat.',
+              'Treat heavy aquifers as an advanced project, not a normal starter shortcut.',
+              'Prepare a controlled shaft, drainage route, and pump access before breaching the layer.',
+              'Use hatch covers on paired stair tiles to limit upward flow while miners work.',
+              'Seal exposed aquifer tiles with constructed walls as soon as each level is accessible.',
+              'Repeat only after confirming water has a safe place to drain or be pumped away.',
             ],
           },
         ],
@@ -863,7 +863,7 @@ export const chapterContent = {
       'Calculate pump stack power at 10 power per active pump.',
       'Use only magma-safe components for magma pumps and exposed machinery.',
       'Prime water reactors carefully and add a lever failsafe.',
-      'Use dig-and-wall for light aquifers and hatch shielding for heavy aquifers.',
+      'Use dig-and-wall for light aquifers and treat hatch shielding for heavy aquifers as an advanced technique.',
     ],
   },
   'military-defense': {
@@ -918,12 +918,12 @@ export const chapterContent = {
           {
             type: 'important',
             label: 'IMPORTANT',
-            body: 'Set the uniform to replace clothing. If soldiers try to wear metal over civilian clothing, body slots can be blocked and key armor pieces may be skipped.',
+            body: 'Set the uniform to replace clothing once armor is available. This reduces equipment conflicts where civilian clothing can block key armor pieces.',
           },
           {
             type: 'warning',
             label: 'WARNING',
-            body: 'Do not set replace clothing before armor exists. Soldiers may strip civilian clothes, fail to equip missing armor, and accumulate unhappy thoughts from embarrassment.',
+            body: 'Do not set replace clothing too early. If armor is missing, soldiers may strip civilian clothes, fail to equip replacements, and accumulate unhappy thoughts from embarrassment.',
           },
         ],
         diagram: 'Dwarven Melee Armor Layering Sequence',
@@ -1147,7 +1147,7 @@ export const chapterContent = {
           {
             type: 'warning',
             label: 'WARNING',
-            body: 'If a moody dwarf has occupied a workshop for a month and required materials are unavailable, wall the workshop off. If they go berserk, containment prevents a fortress-wide fight.',
+            body: 'If a moody dwarf sits idle for weeks because required materials are unavailable, consider walling the workshop off. If they go berserk, containment prevents a fortress-wide fight.',
           },
         ],
       },
