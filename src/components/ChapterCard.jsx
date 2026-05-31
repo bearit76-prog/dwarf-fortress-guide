@@ -14,6 +14,10 @@ export default function ChapterCard({ chapter }) {
           <img
             src={chapter.image}
             alt=""
+            width="1200"
+            height="640"
+            loading="lazy"
+            decoding="async"
             className="h-full w-full object-cover opacity-90 transition duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-coal/75 via-transparent to-transparent" />

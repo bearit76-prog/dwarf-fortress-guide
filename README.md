@@ -15,6 +15,8 @@ npm run dev
 npm run build
 ```
 
+The build automatically regenerates `public/sitemap.xml` from the current chapter slugs.
+
 ## Cloudflare Pages
 
 Use these settings:
@@ -23,4 +25,14 @@ Use these settings:
 - Output directory: `dist`
 - Node version: `20` or newer
 
-The `public/_redirects` file keeps clean React Router URLs working after deployment.
+## Analytics and Search
+
+Set these build-time environment variables in the deployment platform:
+
+- `VITE_GA_MEASUREMENT_ID`: your GA4 measurement ID, formatted like `G-XXXXXXXXXX`
+- `VITE_GOOGLE_SITE_VERIFICATION`: the Google Search Console HTML meta verification token
+
+The deployed site exposes:
+
+- `https://dwarffortressguide.com/sitemap.xml`
+- `https://dwarffortressguide.com/robots.txt`

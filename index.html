@@ -7,7 +7,42 @@
       name="description"
       content="A fan-made Dwarf Fortress strategy guide focused on Steam UI workflows, fortress management, engineering, military planning, and endgame survival."
     />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="%VITE_GOOGLE_SITE_VERIFICATION%" />
+    <link rel="canonical" href="https://dwarffortressguide.com" />
+    <meta property="og:site_name" content="Dwarf Fortress Strategy Guide" />
+    <meta property="og:title" content="Dwarf Fortress Strategy Guide" />
+    <meta
+      property="og:description"
+      content="A fan-made Dwarf Fortress strategy guide focused on Steam UI workflows, fortress management, engineering, military planning, and endgame survival."
+    />
+    <meta property="og:url" content="https://dwarffortressguide.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://dwarffortressguide.com/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dwarf Fortress Strategy Guide" />
+    <meta
+      name="twitter:description"
+      content="A fan-made Dwarf Fortress strategy guide focused on Steam UI workflows, fortress management, engineering, military planning, and endgame survival."
+    />
+    <meta name="twitter:image" content="https://dwarffortressguide.com/og-image.jpg" />
     <title>Dwarf Fortress Strategy Guide</title>
+    <script>
+      window.GA_MEASUREMENT_ID = '%VITE_GA_MEASUREMENT_ID%';
+
+      if (window.GA_MEASUREMENT_ID && !window.GA_MEASUREMENT_ID.includes('VITE_GA_MEASUREMENT_ID')) {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag() {
+          window.dataLayer.push(arguments);
+        };
+        window.gtag('js', new Date());
+
+        const gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${window.GA_MEASUREMENT_ID}`;
+        document.head.appendChild(gtagScript);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

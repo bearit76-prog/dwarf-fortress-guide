@@ -252,7 +252,14 @@ export default function ChapterPage({ chapter }) {
               </div>
               <div className="overflow-hidden rounded-lg border border-steel/20 bg-coal/50">
                 {chapter.image ? (
-                  <img src={chapter.image} alt="" className="h-44 w-full object-cover" />
+                  <img
+                    src={chapter.image}
+                    alt=""
+                    width="1200"
+                    height="640"
+                    decoding="async"
+                    className="h-44 w-full object-cover"
+                  />
                 ) : null}
                 <div className="p-5">
                   <Icon aria-hidden="true" className="h-10 w-10 text-brass" />

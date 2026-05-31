@@ -4,7 +4,7 @@ import ChapterCard from '../components/ChapterCard.jsx';
 import FeatureCard from '../components/FeatureCard.jsx';
 import SectionHeading from '../components/SectionHeading.jsx';
 import { chapters, features } from '../data/chapters.js';
-import heroImage from '../assets/fortress-hero.png';
+import heroImage from '../assets/fortress-hero.jpg';
 
 export default function Home() {
   return (
@@ -13,6 +13,10 @@ export default function Home() {
         <img
           src={heroImage}
           alt=""
+          width="1400"
+          height="747"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 -z-20 h-full w-full object-cover"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-coal/60 via-coal/80 to-coal" />

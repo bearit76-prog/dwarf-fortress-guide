@@ -14,13 +14,13 @@ import {
   Sparkles,
   Wrench,
 } from 'lucide-react';
-import interfaceBanner from '../assets/chapter-banners/interface-controls.png';
-import embarkBanner from '../assets/chapter-banners/perfect-embark.png';
-import industryBanner from '../assets/chapter-banners/industry-automation.png';
-import hydrologyBanner from '../assets/chapter-banners/hydrology-engineering.png';
-import militaryBanner from '../assets/chapter-banners/military-defense.png';
-import moodsBanner from '../assets/chapter-banners/strange-moods-stress.png';
-import endgameBanner from '../assets/chapter-banners/masterclass-endgame.png';
+import interfaceBanner from '../assets/chapter-banners/interface-controls.jpg';
+import embarkBanner from '../assets/chapter-banners/perfect-embark.jpg';
+import industryBanner from '../assets/chapter-banners/industry-automation.jpg';
+import hydrologyBanner from '../assets/chapter-banners/hydrology-engineering.jpg';
+import militaryBanner from '../assets/chapter-banners/military-defense.jpg';
+import moodsBanner from '../assets/chapter-banners/strange-moods-stress.jpg';
+import endgameBanner from '../assets/chapter-banners/masterclass-endgame.jpg';
 
 export const chapters = [
   {
