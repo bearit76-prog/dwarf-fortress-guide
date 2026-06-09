@@ -23,6 +23,11 @@ const pageMeta = {
     title: `Download PDF | ${SITE_NAME}`,
     description: 'Download the free PDF version of the fan-made Dwarf Fortress Strategy Guide.',
   },
+  '/embark-calculator': {
+    title: `Embark Calculator | ${SITE_NAME}`,
+    description:
+      'Build a Dwarf Fortress Steam 53.14 starting party, estimate embark points, and export an embark profile text block.',
+  },
 };
 
 function normalizePath(pathname) {
@@ -65,6 +70,7 @@ export function getSitemapUrls() {
       changefreq: 'monthly',
     })),
     { path: '/download-pdf', priority: '0.7', changefreq: 'monthly' },
+    { path: '/embark-calculator', priority: '0.8', changefreq: 'monthly' },
     { path: '/about', priority: '0.5', changefreq: 'yearly' },
     { path: '/support', priority: '0.4', changefreq: 'yearly' },
   ].map((entry) => ({

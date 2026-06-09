@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Support from './pages/Support.jsx';
 import DownloadPdf from './pages/DownloadPdf.jsx';
+import EmbarkCalculator from './pages/EmbarkCalculator.jsx';
 import ChapterPage from './pages/ChapterPage.jsx';
 import { chapters } from './data/chapters.js';
 import './styles.css';
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="about" element={<About />} />
           <Route path="support" element={<Support />} />
           <Route path="download-pdf" element={<DownloadPdf />} />
+          <Route path="embark-calculator" element={<EmbarkCalculator />} />
           {chapters.map((chapter) => (
             <Route
               key={chapter.slug}

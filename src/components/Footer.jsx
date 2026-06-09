@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 
 const links = [
   ['Home', '/'],
+  ['Embark Tool', '/embark-calculator'],
   ['Download PDF', '/download-pdf'],
   ['About', '/about'],
   ['Support', '/support'],

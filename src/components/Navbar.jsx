@@ -6,6 +6,7 @@ import { chapters } from '../data/chapters.js';
 const links = [
   ['Home', '/'],
   ['Chapters', '/interface-controls'],
+  ['Embark Tool', '/embark-calculator'],
   ['Download PDF', '/download-pdf'],
   ['About', '/about'],
   ['Support', '/support'],
