@@ -25,7 +25,7 @@ const calloutIcons = {
 
 function DataTable({ table }) {
   return (
-    <div className="mt-6 overflow-hidden rounded-lg border border-steel/20">
+    <div className="mt-6 min-w-0 max-w-full overflow-hidden rounded-lg border border-steel/20">
       <div className="border-b border-steel/20 bg-coal/60 px-4 py-3">
         <h3 className="font-heading text-lg font-bold text-text">{table.caption}</h3>
       </div>
@@ -272,8 +272,8 @@ export default function ChapterPage({ chapter }) {
             </div>
           </header>
 
-          <div className="mt-8 grid gap-8 xl:grid-cols-[minmax(0,1fr)_18rem]">
-            <div className="max-w-3xl space-y-10">
+          <div className="mt-8 grid min-w-0 gap-8 xl:grid-cols-[minmax(0,1fr)_18rem]">
+            <div className="min-w-0 max-w-3xl space-y-10">
               {content ? (
                 <>
                   <section className="fade-in">
